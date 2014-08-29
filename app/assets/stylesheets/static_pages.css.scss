@@ -1,0 +1,118 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*clear fix*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+body {
+
+  // background-image: url(../assets/images/images.jpg);
+  background-color: rgba(196, 253, 250, .05);
+  margin: 0 auto;
+  font-size: 18px;
+}
+.img1 {float: right;}
+/*Head*/
+header {
+	float:left;
+	margin: 0 0 10px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+
+}
+
+header, h1, h2 {
+	  background:#91C3DC;
+	display: block;
+  color: #2264A6;
+}
+h1, h2{
+text-align: center;
+}
+/*links*/
+nav a {
+  text-decoration: none;
+  display:inline-block;
+  margin: 10px 10px 10px 10px;
+  padding:10px 20px 10px 20px;
+  box-sizing: border-box; 
+  color:white;
+  background:steelblue;
+  border-radius:10%;
+
+}
+nav a:hover, .cur {
+  background:#2B6395;
+}
+nav{
+	text-align: center;
+  background-color:#7DB7D4; 
+}
+
+/*Main section*/
+section p {
+  margin-right: auto;
+  margin-left:auto;
+  max-width: 900px;
+  text-align: center;
+}
+#section{
+  padding: 50px 50px;
+margin-top: 12%;
+}
+.contactinfo {
+  padding: 30px 30px;
+  margin-top:.2%;
+}
+.mypic {
+  display: block;
+  margin: 15.0em auto 0;
+  padding:10 0 0 0;
+  border-radius: 10%;
+  max-height: 250px;
+  max-width: 500px;
+}
+#section, .space {
+margin-top: 11em;
+}
+/*table section*/
+table{
+  margin-right: auto; 
+  margin-left: auto;
+text-align: left;
+max-width: 1000px;}
+
+th {
+   font-weight:bold;
+}
+
+/*footer*/
+.foot {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.foot:hover {
+  background: url(../app/assets/images/facebook.png);
+}
+.footer{
+  width: 10%;
+  margin: 1em auto 3em;
+}
+
+footer{
+  text-align: center;
+
+ }
