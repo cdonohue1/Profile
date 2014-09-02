@@ -41,25 +41,7 @@ header, h1, h2 {
 h1, h2{
 text-align: center;
 }
-/*links*/
-nav a {
-  text-decoration: none;
-  display:inline-block;
-  margin: 10px 10px 10px 10px;
-  padding:10px 20px 10px 20px;
-  box-sizing: border-box; 
-  color:white;
-  background:steelblue;
-  border-radius:10%;
 
-}
-nav a:hover, .cur {
-  background:#2B6395;
-}
-nav{
-	text-align: center;
-  background-color:#7DB7D4; 
-}
 
 /*Main section*/
 section p {

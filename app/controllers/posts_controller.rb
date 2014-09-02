@@ -4,19 +4,16 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
-  end
+     @posts = Post.all
+   end
 
-  # GET /posts/1
-  # GET /posts/1.json
-  def show
-  end
+   def show
+     @post = Post.find(params[:id])
+   end
 
-  # GET /posts/new
-  def new
-    @post = Post.new
-  end
-
+   def new
+     @post = Post.new
+   end
   # GET /posts/1/edit
   def edit
   end

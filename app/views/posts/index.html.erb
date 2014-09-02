@@ -1,4 +1,12 @@
+<header class="top">
 <h1>Posts</h1>
+  <nav>
+    <a href="/" class="indexlink Home">Home</a>
+    <a href="/about" class="resumelink">Resume</a>
+    <a href="/contact" class="contactlink">Contact</a>
+    <a href="/posts" class="blog cur"> Blog </a>
+   </nav>
+</header>
 
 
   <% @posts.each do |post| %>
@@ -7,7 +15,7 @@
     <h4><%= post.author %></h4>
     <p><%= post.body %></p>
       <tr>
-        <td><%= link_to 'View Post', post %></td>
+        <td><%= link_to 'Show post', post_path(post.id) %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
