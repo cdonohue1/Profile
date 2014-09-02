@@ -105,8 +105,8 @@ th {
   margin-left: auto;
 }
 .foot:hover {
-  background: url(../app/assets/images/facebook.png);
-}
+  // background-image: url(<%= asset_path'facebook.png' %>);
+ }
 .footer{
   width: 10%;
   margin: 1em auto 3em;
