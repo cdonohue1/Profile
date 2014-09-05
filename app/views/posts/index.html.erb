@@ -8,18 +8,21 @@
    </nav>
 </header>
 
-
+<div class="blogposts">
   <% @posts.each do |post| %>
     
     <h3><%= post.title %></h3>
     <h4><%= post.author %></h4>
     <p><%= post.body %></p>
+    <p><%= link_to 'New Post', new_post_path %></p>
       <tr>
         <td><%= link_to 'Show post', post_path(post.id) %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td> <%= link_to 'Edit post', edit_post_path(post.id) %></td>
+        <td><%= link_to 'Delete Post', post, method: :delete %></td>
       </tr>
     <% end %>
 <br>
 
+
 <%= link_to 'New Post', new_post_path %>
+</div>

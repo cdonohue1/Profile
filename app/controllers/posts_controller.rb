@@ -33,6 +33,23 @@ class PostsController < ApplicationController
       end
     end
   end
+  def edit
+        @post = Post.find(params[:id])
+  end
+  def update
+    @post = Post.find(params[:id])
+
+    if @post.update_attributes(post_params)
+        redirect_to posts_path
+    else
+        render :edit
+    end
+ end
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to posts_path
+  end
 
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
@@ -59,6 +76,7 @@ class PostsController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])

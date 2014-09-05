@@ -22,7 +22,7 @@ nav a {
   box-sizing: border-box; 
   color:white;
   background:steelblue;
-  border-radius:10%;
+  border-radius:10% 50%;
 
 }
 nav a:hover, .cur {
