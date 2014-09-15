@@ -15,7 +15,34 @@ h1 {
     margin:0 auto .5em;
     padding: .5em;
     box-sizing: border-box;
+    p, a {margin:0 5em;}
     }
 .blogposts {
       margin:1em 25% 25%;
+
+}
+.bodytext{
+       min-width: 80%;
+       min-height: 35vh;
+}
+form {
+    
+}
+.blogposts a{
+    margin-left: .5em;
+    margin-right: .5em;
+    padding: .3em .3em;
+    border-style: solid;
+}
+.blogposts a:hover{
+    text-decoration: none;
+    color:#3772A6;
+
+}
+.deletecomment{
+    margin: 1.7em 0;
+}
+.commentdiv {
+    margin: 1em;
+    border: solid;
 }

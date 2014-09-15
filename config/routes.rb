@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   # get '/posts', to: 'posts#blog', as: :posts
 
 
-resources :posts
+resources :posts do 
+  resources :comments
+end
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,15 @@
+<div class="commentdiv">
+<h4>Comments</h4>
+
+
+<p>
+   <% post.comments.each do |comment|  %>
+   <p><%= comment.body  %> </p>
+</p>
+<p class="deletecomment">
+  <%= link_to 'Delete Comment', post_comment_path(post, comment),
+               method: :delete,
+               data: { confirm: 'Really?' } %>
+</p>
+   <% end %>
+</div>
