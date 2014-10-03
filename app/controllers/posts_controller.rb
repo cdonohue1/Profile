@@ -37,7 +37,7 @@
     @post = Post.find(params[:id])
 
     if @post.update_attributes(post_params)
-        redirect_to posts_path
+        redirect_to post_comment_path
     else
         render :edit
     end
